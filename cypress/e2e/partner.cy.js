@@ -2,7 +2,7 @@ describe('template spec', () => {
   it('passes', () => {
     cy.visit('https://www.chitai-gorod.ru/');
     cy.wait(1000);
-    cy.scrollTo(0, 9000);
+    cy.scrollTo(0, 6000);
     cy.get('.main-articles > .card-slider > .embla > .embla__viewport > .embla__container > :nth-child(2) > .content-card__title').click();
     cy.wait(1000);
     cy.scrollTo(0, 1500);
