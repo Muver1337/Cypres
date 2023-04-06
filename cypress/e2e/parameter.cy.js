@@ -8,6 +8,7 @@ describe('template spec', () => {
     cy.get('.modal__close').click();
     cy.get('.product-detail-offer-header__actions > .product-buttons > .action-button').click({force: true});
     cy.wait(500);
+    cy.scrollTo(0, 700);
     cy.get('.product-detail-tabs-header > :nth-child(2)').click({force: true});
   })
 })
